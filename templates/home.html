@@ -1,0 +1,89 @@
+{% extends "index.html" %}
+
+{% block title %}
+home
+{% endblock %}
+
+{% block main %}
+<style>
+    .homelogo {
+        text-align: center !important;
+        filter: invert(1); /* Optional: Removes this if you don't want the logo to be inverted */
+    }
+    
+    .homeback {
+        background-image: url("../static/homeback.jpg");
+        background-size: cover;        /* Ensures the background image covers the container */
+        background-position: center;    /* Keeps the background centered */
+        height: 100%;                  /* Ensures it takes up the full height of the viewport */
+        width: 100%; 
+        background-attachment: fixed;                   
+    }
+    
+    .saying {
+        color: white !important;
+        text-align: center;
+        padding: 30px;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    
+    .purpose {
+        margin-top: 40px;
+        padding: 50px;
+        border: 1px solid black;       /* Fixed the border property */
+        background-color: gainsboro;
+        color: black;
+        text-align: center !important;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    
+    .title {
+        padding: 10px;
+    }
+    
+    .purpose-body {
+        padding: 10px;
+        width: 900px;
+        text-align: center;
+        margin: 0 auto; /* Centers the body of the purpose text */
+    }
+    
+    .purpose-img {
+        padding: 10px;
+        width: 900px;
+        height: auto;
+        display: block;                /* Ensures the image behaves like a block-level element */
+        margin: 0 auto;                /* Centers the image horizontally */
+    }
+    
+    .purpose-img img {
+        width: 100%;                   /* Optional: Adjusts image to fill the box, maintaining aspect ratio */
+        max-width: 100%;                /* Ensures image does not exceed the width of its container */
+        height: auto;                  /* Maintains aspect ratio */
+    }
+
+</style>
+
+<div class="homeback">
+    <div class="homelogo">
+        <img id="homelogo" src="../static/logo.png" alt="logo">
+    </div>
+
+    <div class="saying">
+        <h1>Where Unity meets Excellence</h1>
+    </div>
+
+    <div class="purpose">
+        <div class="title">
+            <h1>Our Purpose</h1>
+        </div>
+        <div class="purpose-body">
+            <h2>We offer a variety of dishes from around the world. Carved up and served by award-winning chefs, we wish to bring people of all backgrounds together through our kitchen-made delicacies and honor humanity.</h2>
+        </div>
+        <div class="purpose-img">
+            <img src="../static/world.jpg" alt="World Image">
+        </div>
+    </div>
+</div>
+
+{% endblock %}

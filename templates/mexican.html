@@ -1,0 +1,145 @@
+{% extends "index.html" %}
+
+{% block title %}
+home
+{% endblock %}
+
+{% block main %}
+<style>
+    .asianback {
+        background-image: url("../static/mexican.jpg"); 
+        background-size: cover;                        
+        background-position: center;
+        height: auto;                  
+        width: 100%; 
+        background-attachment: fixed;                      
+                                       
+    }
+    
+    .asian-header {
+        text-align: center;
+        color: white;
+        font-size: 100px;                                
+        padding-top: 100px;
+        padding-bottom:250px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    
+    .boxes {
+        display: flex;                                   
+        flex-direction: column;                          
+        gap: 200px;                                       
+        margin-top: 20px;
+    }
+    
+    .appetizers {
+        background-color: lightgray;      
+        padding: 20px;                           
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;                          
+    }
+    .specials{
+        background-color: gray;      
+        padding: 20px;                           
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+        color:white;
+        margin-bottom: 50px;
+
+    }
+    
+    .appetizers-title, .specials-title {
+        font-size: 100px;
+        text-align: center;
+        margin-bottom: 20px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    
+    .appetizers-body, .specials-body {
+        padding: 10px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    
+    ul {
+        list-style-type: none;                           
+        padding-left: 0;                                 
+    }
+    
+    li.item {
+        margin-bottom: 20px;                             
+        text-align: center;
+    }
+
+    .item img{
+        padding: 30px;
+        width:500px;
+        height: auto;
+
+    }
+    .logo {
+        width: 50px !important;       
+        height: auto !important;      
+        padding: 10px;               
+        filter: invert(1);            
+        display: block;
+        margin-left: auto;                        
+        margin-right: 1070px;           
+    }
+    
+    
+    
+</style>
+
+<div class="asianback">
+    <div class="asian-header">
+        Mexican Cuisine
+    </div>
+    <div class="boxes">
+        <div class="appetizers">
+            <div class="appetizers-title">
+                Appetizers
+            </div>
+            <div class="appetizers-body">
+                <ul class="appetizer-options">
+                    <li class="item">
+                        <h1>Chips and Salsa</h1>
+                        <h2> A usually spicy sauce of chopped tomatoes, onions, and peppers that is commonly served with Mexican food</h2>
+                        <h3>$10.00 &nbsp;&nbsp;&nbsp;&nbsp; 500 cal</h3>  <!-- Adds space between the words -->
+                        <img src="../static/salsa.jpg" alt="samosa">
+                    </li>
+                    <li class="item">
+                        <h1>Yuca Fries</h1>
+                        <h2>Yuca is comparable to potatoes, but it has a tougher, more fibrous texture</h2>
+                        <h3>$10.00 &nbsp;&nbsp;&nbsp;&nbsp; 500 cal</h3>
+                        <img src="../static/yucafries.jpg" alt="sushi">
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="specials">
+            <div class="specials-title">
+                Specials
+            </div>
+            <div class="specials-body">
+                <ul class="specials-options">
+                    <li class="item">
+                        <h1>Taco</h1>
+                        <h2>A traditional Mexican dish of a folded or rolled tortilla filled with various ingredients and eaten by hand</h2>
+                        <h3>$10.00 &nbsp;&nbsp;&nbsp;&nbsp; 500 cal</h3>
+                        <img src="../static/taco.jpg" alt="dumplings">
+                    </li>
+                    <li class="item">
+                        <h1>Chalupa</h1>
+                        <h2>Mexican snack or dish of fried corn dough in the shape of a boat or bowl that's filled with savory ingredients</h2>
+                        <h3>$10.00 &nbsp;&nbsp;&nbsp;&nbsp; 500 cal</h3>
+                        <img src="../static/chalupa.jpg" alt="sushi">
+                    </li>
+                   
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class = "logo">
+        <img id="homelogo" src="../static/logo.png" alt="logo">
+    </div>
+</div>
+{% endblock %}

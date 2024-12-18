@@ -1,0 +1,143 @@
+{% extends "index.html" %}
+
+{% block title %}
+asian
+{% endblock %}
+
+{% block main %}
+<style>
+    .asianback {
+        background-image: url("../static/asian2.jpg"); 
+        background-size: cover;                        
+        background-position: center;
+        height: auto;                  
+        width: 100%; 
+        background-attachment: fixed;                      
+                                       
+    }
+    
+    .asian-header {
+        text-align: center;
+        color: white;
+        font-size: 100px;                                
+        padding-top: 100px;
+        padding-bottom:250px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    
+    .boxes {
+        display: flex;                                   
+        flex-direction: column;                          
+        gap: 200px;                                       
+        margin-top: 20px;
+    }
+    
+    .appetizers {
+        background-color: lightgray;      
+        padding: 20px;                           
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;                          
+    }
+    .specials{
+        background-color: gray;      
+        padding: 20px;                           
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+        color:white;
+        margin-bottom: 50px;
+
+    }
+    
+    .appetizers-title, .specials-title {
+        font-size: 100px;
+        text-align: center;
+        margin-bottom: 20px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    
+    .appetizers-body, .specials-body {
+        padding: 10px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    
+    ul {
+        list-style-type: none;                           
+        padding-left: 0;                                 
+    }
+    
+    li.item {
+        margin-bottom: 20px;                             
+        text-align: center;
+    }
+
+    .item img{
+        padding: 30px;
+
+    }
+    .logo {
+        width: 50px !important;       
+        height: auto !important;      
+        padding: 10px;               
+        filter: invert(1);            
+        display: block;
+        margin-left: auto;                        
+        margin-right: 1070px;           
+    }
+    
+    
+    
+</style>
+
+<div class="asianback">
+    <div class="asian-header">
+        Asian Cuisine
+    </div>
+    <div class="boxes">
+        <div class="appetizers">
+            <div class="appetizers-title">
+                Appetizers
+            </div>
+            <div class="appetizers-body">
+                <ul class="appetizer-options">
+                    <li class="item">
+                        <h1>Dumplings</h1>
+                        <h2>Small pockets of dough wrapped around a filling of meat, vegetables, or other ingredients</h2>
+                        <h3>$10.00 &nbsp;&nbsp;&nbsp;&nbsp; 500 cal</h3>  <!-- Adds space between the words -->
+                        <img src="../static/dumplings.jpg" alt="dumplings">
+                    </li>
+                    <li class="item">
+                        <h1>Sushi</h1>
+                        <h2>Japanese dish that features medium-grained rice cooked in vinegar, served with raw or cooked seafood and a variety of toppings or fillings</h2>
+                        <h3>$10.00 &nbsp;&nbsp;&nbsp;&nbsp; 500 cal</h3>
+                        <img src="../static/sushi.jpg" alt="sushi">
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="specials">
+            <div class="specials-title">
+                Specials
+            </div>
+            <div class="specials-body">
+                <ul class="specials-options">
+                    <li class="item">
+                        <h1>Lo Mein</h1>
+                        <h2>Chinese dish of egg-based noodles tossed with vegetables, protein, and sauce</h2>
+                        <h3>$10.00 &nbsp;&nbsp;&nbsp;&nbsp; 500 cal</h3>
+                        <img src="../static/lomein.jpg" alt="dumplings">
+                    </li>
+                    <li class="item">
+                        <h1>Fried Rice</h1>
+                        <h2>Dish of cooked rice that has been stir-fried in a wok or a frying pan and is usually mixed with other ingredients such as eggs, vegetables, seafood, or meat</h2>
+                        <h3>$10.00 &nbsp;&nbsp;&nbsp;&nbsp; 500 cal</h3>
+                        <img src="../static/friedrice.jpg" alt="sushi">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class = "logo">
+        <img id="homelogo" src="../static/logo.png" alt="logo">
+    </div>
+</div>
+
+{% endblock %}
