@@ -6,9 +6,21 @@ home
 
 {% block main %}
 <style>
+
     .homelogo {
-        text-align: center !important;
-        filter: invert(1); /* Optional: Removes this if you don't want the logo to be inverted */
+        text-align: center;           /* Centers the logo horizontally */
+        position: relative;           /* Required for absolute positioning of the logo */
+        height: 100%;                 /* Ensure the container takes the full height if you want vertical centering */
+    }
+   
+    .homelogo img{
+        /* Updated CSS */
+        text-align: center; /* Centers the logo */
+        filter: invert(1); /* Inverts the logo colors */
+        max-width: 500px; /* Ensures it scales with the parent container */
+        width: 100%; /* Adapts to the container size */
+        height: auto; /* Maintains aspect ratio */
+
     }
     
     .homeback {
@@ -43,14 +55,14 @@ home
     
     .purpose-body {
         padding: 10px;
-        width: 900px;
+        max-width: 900px;
         text-align: center;
         margin: 0 auto; /* Centers the body of the purpose text */
     }
     
     .purpose-img {
         padding: 10px;
-        width: 900px;
+        max-width: 900px;
         height: auto;
         display: block;                /* Ensures the image behaves like a block-level element */
         margin: 0 auto;                /* Centers the image horizontally */

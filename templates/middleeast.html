@@ -47,7 +47,7 @@ middle east
     }
     
     .appetizers-title, .specials-title {
-        font-size: 100px;
+        font-size: 75px;
         text-align: center;
         margin-bottom: 20px;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -70,19 +70,29 @@ middle east
 
     .item img{
         padding: 30px;
-        width:500px;
+        max-width:500px;
         height: auto;
+        width: 75%;
 
     }
     .logo {
-        width: 50px !important;       
-        height: auto !important;      
-        padding: 10px;               
-        filter: invert(1);            
-        display: block;
-        margin-left: auto;                        
-        margin-right: 1070px;           
+        max-width: 500px;             /* Limits the max width of the logo */
+        width: 50% !important;        /* Adjusts the logo size to 50% of its parent container */
+        height: auto !important;      /* Maintains aspect ratio */
+        padding: 10px;                /* Adds padding around the logo */
+        filter: invert(1);            /* Inverts the logo colors */
+        display: block;               /* Ensures the image behaves like a block element */
+        margin-left: auto;            /* Centers the image horizontally */
+        margin-right: auto;           /* Centers the image horizontally */
+        text-align: center;           /* Centers the content within the parent container */
     }
+    .logo img{
+        max-width: 500px;             /* Limits the max width of the logo */
+        width: 50% !important;        /* Adjusts the logo size to 50% of its parent container */
+        height: auto !important;
+
+    }
+    
     
     
     
